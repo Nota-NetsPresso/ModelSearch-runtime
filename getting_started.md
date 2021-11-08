@@ -37,7 +37,7 @@ $ make
 To use this runtime module, you need to clone this repository in your local storage and install dependencies that are described in ‘requirements.txt’.
 
 ```shell
-$ git clone https://github.com/nota-github/modelsearch-runtime.git
+$ git clone https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime.git
 $ pip3 install -r requirements.txt
 ```
 
