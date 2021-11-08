@@ -5,7 +5,13 @@ This repository involves the source codes for inferring models in the form of th
 
 ## How to run
 
-Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) above.
+# TFLite
+$ python3 runtime.py --model ${tflite_dir} --image_folder ${img_folder} --classes ${class.yaml}
+# TensorRT
+$ python3 runtime.py --model ${tensorrt_dir} --image_folder ${img_folder} --classes ${class.yaml}
+
+
+For more details, please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) above.
 
 
 ## Result
