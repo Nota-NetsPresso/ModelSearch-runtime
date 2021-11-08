@@ -1,2 +1,2 @@
 # ModelSearch-runtime
-NetsPresso ModelSearch runtime
+NetsPresso ModelSearch runtime for trt, tflite.
