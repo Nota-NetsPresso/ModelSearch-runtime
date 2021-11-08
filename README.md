@@ -1,17 +1,17 @@
-# Runtime
+# NetsPresso-ModelSearch-Runtime
 
 This repository involves the source codes for inferring models in the form of the TensorRT (.trt) and tflite (.tflie). The visualization for the inference results is also supported.
 
 
 ## How to run
-
+```bash
 # TFLite
-$ python3 runtime.py --model ${tflite_dir} --image_folder ${img_folder} --classes ${class.yaml}
+$ python3 runtime.py --model ${tflite_dir} --image_folder ${img_folder} --classes ${class_yaml}
 # TensorRT
-$ python3 runtime.py --model ${tensorrt_dir} --image_folder ${img_folder} --classes ${class.yaml}
+$ python3 runtime.py --model ${tensorrt_dir} --image_folder ${img_folder} --classes ${class_yaml}
+```
 
-
-For more details, please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) above.
+Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) for more details. 
 
 
 ## Result
