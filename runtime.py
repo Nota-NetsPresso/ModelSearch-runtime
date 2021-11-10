@@ -139,7 +139,7 @@ class TRTWrapper(ModelWrapper):
             [cuda.memcpy_dtoh_async(out.cpu, out.gpu, self.stream) for out in self.outputs]
             self.stream.synchronize()
 
-        result = self.outputs[0].cpu if self.model.num_bindings == 1 else self.outputs[3].cpu
+        result = self.outputs[0].cpu
         result = result.reshape((-1, len(classes)+5))
         return result
 
@@ -460,7 +460,7 @@ if __name__ == "__main__":
     # load class info(.yaml)
     with open(args.classes) as f:
         classes = yaml.safe_load(f)
-        classes = classes['names']
+        classes = classes['class_names']
 
     # load model 
     extension = os.path.splitext(args.model)[1]
