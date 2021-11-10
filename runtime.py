@@ -460,7 +460,7 @@ if __name__ == "__main__":
     # load class info(.yaml)
     with open(args.classes) as f:
         classes = yaml.safe_load(f)
-        classes = classes['class_names']
+        classes = classes['names']
 
     # load model 
     extension = os.path.splitext(args.model)[1]
