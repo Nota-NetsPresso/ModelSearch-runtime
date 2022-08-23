@@ -1,18 +1,18 @@
-# NetsPresso-ModelSearch-Runtime
+# NetsPresso-Model-Searcher-Runtime
 
-This repository involves the source codes for inferring models in the form of the TensorRT (.trt) and tflite (.tflie). The visualization for the inference results is also supported.
+This repository involves the source codes for inferring models in the form of the TensorRT(.trt) and Tensorflow Lite(.tflie) and Openvino. The visualization for the inference results is also supported.
 
 
 ## How to run
+* mode: "save" for saving inference result image and "show" for showing inference image.
+* conf_thres: Confidence threshold, default=0.25.
+* iou_thres: IoU threshold, default=0.60.
+* classes: Yaml file path of classes information.
 ```bash
-# TFLite
-$ python3 runtime.py --model ${tflite_dir} --image_folder ${img_folder} --classes ${class_yaml}
-# TensorRT
-$ python3 runtime.py --model ${tensorrt_dir} --image_folder ${img_folder} --classes ${class_yaml}
+$ python3 runtime.py --model ${model_file_path} --image_folder ${img_folder} --classes ${yaml_file_path} --mode save
 ```
 
-Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) for more details. 
-
+Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) and [example](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/examples/readme.md) for more details.
 
 ## Result
 

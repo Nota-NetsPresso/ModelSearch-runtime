@@ -37,7 +37,7 @@ $ make
 To use this runtime module, you need to clone this repository in your local storage and install dependencies that are described in ‘requirements.txt’.
 
 ```shell
-$ git clone https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime.git
+$ git clone https://github.com/Nota-NetsPresso/NetsPresso-Model-Searcher-Runtime.git
 $ pip3 install -r requirements.txt
 ```
 
@@ -51,13 +51,7 @@ To execute the ‘runtime.py’, you can use an example model with sample images
 Example command:
 
 ```shell
-# TFLite
-$ python3 runtime.py --model ./runtime_example/example.tflite --image_folder ./runtime_example/ --classes ./runtime_example/data.yaml
-# TensorRT
-$ python3 runtime.py --model ./runtime_example/example.trt --image_folder ./runtime_example/ --classes ./runtime_example/data.yaml
+$ python3 runtime.py --model ./runtime_example/example.tflite --image_folder ./runtime_example/ --classes ./runtime_example/data.yaml --mode save
 ```
 
-- --model : a path where .trt or .tflite model file is located
-- --image_folder : a path where images are located
-- --classes : a path where a ‘yaml file’ that contains classes information are located
 
