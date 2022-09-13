@@ -155,8 +155,10 @@ class NPModel(Basemodel):
         return ious
     
     def normalize(self, boxes):
-        #input_shape = [self.inputs.height, self.inputs.width] #Todo
-        input_shape = [640,640]
+    	height = self.inputs.get(0).height
+    	width = self.inputs.get(0).width
+        input_shape = [height, width] 
+
         if not boxes:
             return boxes
         np_boxes = np.array(boxes)
