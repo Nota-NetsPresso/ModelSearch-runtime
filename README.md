@@ -12,7 +12,7 @@ This repository involves the source codes for inferring models in the form of th
 $ python3 runtime.py --model ${model_file_path} --image_folder ${img_folder} --classes ${yaml_file_path} --mode save
 ```
 
-Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md) and [example](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/examples/readme.md) for more details.
+Please refer to [getting_started.md](https://github.com/Nota-NetsPresso/NetsPresso-ModelSearch-Runtime/blob/main/getting_started.md)
 
 ## Result
 
